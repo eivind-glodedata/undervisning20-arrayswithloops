@@ -31,21 +31,23 @@
     <main>
       <section id="home" class="sectionHero">
         <!-- Hero-section -->
-        <div class="buisnessCard">
-          <div class="cardText">
-          <h2>Julie Hauge</h2>
-          <h4>Fullstack utvikler</h4>
-          <p>Sjekk ut min GitHub</p>
-          </div>
-          <!-- 
-          Må ha konto for å genrere:
-          https://www.adobe.com/express/feature/image/qr-code-generator -->
-          <img class="cardImg" src="images/githubQrCode.png" alt="QR-code for my Github">
-        </div>
+        <form>
+          <label for="shoppingItem">
+            Varer til handlelisten
+            <input type="text" name="shoppingItem" id="shoppingItem" placeholder="Skriv en vare..">
+          </label>
+        </form>
+
+        <button id="pushButton">Push</button>
+        <button id="popButton">Pop</button>
+        <button id="unshiftButton">Unshift</button>
+        <button id="shiftButton">Shift</button>
+
+        <p id="displayItems"><!-- Får innhold fra JS --></p>
       </section>
     </main>
     <footer>
-      <h4>Laget av Julie</h4>
+      <h4>Laget av Eivind</h4>
     </footer>
   </body>
 </html>
